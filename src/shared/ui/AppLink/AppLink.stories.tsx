@@ -1,8 +1,8 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
+import { Theme } from 'widgets/ThemeProvider';
 import { AppLink, AppLinkTheme } from './AppLink';
-import {Theme} from "widgets/ThemeProvider";
 
 export default {
     title: 'shared/AppLink',
@@ -42,5 +42,3 @@ SecondaryDark.args = {
     theme: AppLinkTheme.SECONDARY,
 };
 SecondaryDark.decorators = [ThemeDecorator(Theme.DARK)];
-
-
