@@ -12,5 +12,7 @@
   "Переключить": "Toggle",
   "Воспроизвести ошибку": "Throw error",
   "Войти": "Login",
-  "Lorem ipsum dolor sit amet,\n": "Lorem ipsum dolor sit amet,\\n"
+  "Lorem ipsum dolor sit amet,\n": "Lorem ipsum dolor sit amet,\\n",
+  "Увеличить": "Увеличить",
+  "Уменьшить": "Уменьшить"
 }

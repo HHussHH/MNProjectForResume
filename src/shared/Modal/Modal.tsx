@@ -2,17 +2,17 @@ import {
     FC, useCallback, useEffect, useRef, useState,
 } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
-import { useTranslation } from 'react-i18next';
 import { Portal } from 'shared/Portal/Portal';
 import { useTheme } from 'widgets/ThemeProvider';
 import cls from './Modal.module.scss';
 
 interface ModalProps {
-  className?: string;
-  children?: React.ReactNode;
-  isOpen?: boolean;
-  onClose?: () => void;
+    className?: string;
+    children?: React.ReactNode;
+    isOpen?: boolean;
+    onClose?: () => void;
 }
+
 const ANIMATION_DELAY = 300;
 
 export const Modal: FC<ModalProps> = (props) => {
@@ -52,7 +52,7 @@ export const Modal: FC<ModalProps> = (props) => {
         };
     }, [isOpen, onKeyDown]);
 
-    const onContentClick = (e:React.MouseEvent) => {
+    const onContentClick = (e: React.MouseEvent) => {
         e.stopPropagation();
     };
     const mods: Record<string, boolean> = {
@@ -62,7 +62,7 @@ export const Modal: FC<ModalProps> = (props) => {
     };
     return (
         <Portal>
-            <div className={classNames(cls.Modal, mods, [className, cls[theme]])}>
+            <div className={classNames(cls.Modal, mods, [className, theme])}>
                 <div className={cls.overlay} onClick={closeHandler}>
                     <div
                         className={cls.content}
