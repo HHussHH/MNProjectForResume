@@ -1,6 +1,12 @@
 {
+  "Lorem ipsum dolor sit amet,\n                consectetur adipisicing elit": {
+    "\n                Aliquam amet aperiam dolore esse\n                fugit maxime quaerat quis sapiente voluptas": {
+      " Reiciendis!": " Reiciendis!"
+    }
+  },
   "Sidebar": "Sidebar",
   "throw error": "throw error",
+  "Войти": "Войти",
   "Воспроизвести ошибку": "Воспроизвести ошибку",
   "Главная": "Главная",
   "Главная страница": "Главная страница",
@@ -10,5 +16,6 @@
   "Переключить": "Переключить",
   "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
   "Страница не найдена": "Страница не найдена",
-  "Язык": "Язык"
+  "Язык": "Язык",
+  "Lorem ipsum dolor sit amet,\n": "Lorem ipsum dolor sit amet,\\n"
 }
