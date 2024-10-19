@@ -4,7 +4,15 @@
       " Reiciendis!": " Reiciendis!"
     }
   },
+  "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
+    " Autem blanditiis ducimus eaque eius fugiat nihil non perspiciatis quis rem voluptate?": " Autem blanditiis ducimus eaque eius fugiat nihil non perspiciatis quis rem voluptate?",
+    " Eaque eveniet excepturi nostrum obcaecati odio, tempore totam voluptates! Odio, reiciendis, sed": {
+      "": ""
+    }
+  },
   "Sidebar": "Sidebar",
+  "decrement": "",
+  "increment": "",
   "throw error": "throw error",
   "Войти": "Войти",
   "Воспроизвести ошибку": "Воспроизвести ошибку",

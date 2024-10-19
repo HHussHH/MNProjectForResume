@@ -23,10 +23,7 @@ export const Navbar: FC<NavbarProps> = ({ className }) => {
             </Button>
 
             <Modal isOpen={isAuthModal} onClose={onToggleModel}>
-                {t('Lorem ipsum dolor sit amet,\n'
-                    + '                consectetur adipisicing elit.\n'
-                    + '                Aliquam amet aperiam dolore esse\n'
-                    + '                fugit maxime quaerat quis sapiente voluptas. Reiciendis!')}
+                {t('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis ducimus eaque eius fugiat nihil non perspiciatis quis rem voluptate?')}
             </Modal>
         </div>
     );

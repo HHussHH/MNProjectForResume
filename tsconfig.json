@@ -14,6 +14,7 @@
     "moduleResolution": "node",
     // Для абсолютного импорта
     "baseUrl": ".",
+    "esModuleInterop": true,
     "paths": {
       "*": ["./src/*"]
     },
@@ -24,7 +25,6 @@
     // console.log(Moment);
     // c флагом результат [object Object]
     // console.log(Moment);
-    "esModuleInterop": true,
     // Если какая-либо библиотека не имеет default import,
     // лоадеры вроде ts-loader или babel-loader автоматически создают их
     // вместо такого импорта
