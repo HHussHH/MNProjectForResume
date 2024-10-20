@@ -2,7 +2,7 @@ import {
     FC, useCallback, useEffect, useRef, useState,
 } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
-import { Portal } from 'shared/Portal/Portal';
+import { Portal } from 'shared/ui/Portal/Portal';
 import { useTheme } from 'widgets/ThemeProvider';
 import cls from './Modal.module.scss';
 

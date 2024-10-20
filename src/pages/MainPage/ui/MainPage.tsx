@@ -1,7 +1,7 @@
 import { FC, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Counter } from 'entities/Counter';
-import { Input } from 'shared/Input/Input';
+import { Input } from 'shared/ui/Input/Input';
 
 const MainPage: FC = () => {
     const { t } = useTranslation('main');

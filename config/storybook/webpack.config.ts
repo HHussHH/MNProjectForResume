@@ -1,14 +1,14 @@
-import webpack, { RuleSetRule } from 'webpack';
-import path from 'path';
+import { RuleSetRule, DefinePlugin, Configuration } from 'webpack';
+import { resolve } from 'path';
 import { buildCssLoader } from '../build/loaders/buildCssLoader';
 import { BuildPaths } from '../build/types/config';
 
-export default ({ config }: {config: webpack.Configuration}) => {
+export default ({ config }: {config: Configuration}) => {
     const paths: BuildPaths = {
         build: '',
         html: '',
         entry: '',
-        src: path.resolve(__dirname, '..', '..', 'src'),
+        src: resolve(__dirname, '..', '..', 'src'),
     };
     config.resolve.modules.push(paths.src);
     config.resolve.extensions.push('.ts', '.tsx');
@@ -28,5 +28,8 @@ export default ({ config }: {config: webpack.Configuration}) => {
     });
     config.module.rules.push(buildCssLoader(true));
 
+    config.plugins.push(new DefinePlugin({
+        __IS_DEV__: true,
+    }));
     return config;
 };

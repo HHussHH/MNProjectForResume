@@ -13,7 +13,11 @@
   "Воспроизвести ошибку": "Throw error",
   "Войти": "Login",
   "Lorem ipsum dolor sit amet,\n": "Lorem ipsum dolor sit amet,\\n",
-  "Увеличить": "Увеличить",
-  "Уменьшить": "Уменьшить",
-  "Введите пароль": "Введите пароль"
+  "Увеличить": "Increment",
+  "Уменьшить": "Decrement",
+  "Введите пароль": "Enter password",
+  "Форма авторизации": "Auth Form",
+  "Вы ввели неверный логин или пароль": "Uncorrect username or password",
+  "Введите логин": "Enter login",
+  "Выйти": "Exit"
 }
