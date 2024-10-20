@@ -5,6 +5,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { Sidebar } from 'widgets/Sidebar';
 import { useDispatch } from 'react-redux';
 import { userActions } from 'entities/User';
+import { USER_LOCALSTORAGE_KEY } from 'shared/const/localstorage';
 import { AppRouter } from './providers/router';
 
 function App() {
@@ -12,7 +13,9 @@ function App() {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(userActions.initAuthData());
+        const user = localStorage.getItem(USER_LOCALSTORAGE_KEY);
+
+        dispatch(userActions.initAuthData(JSON.parse(user)));
     }, [dispatch]);
     return (
         <div className={classNames('app', {}, [theme])}>
